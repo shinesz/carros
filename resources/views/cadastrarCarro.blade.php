@@ -1,15 +1,15 @@
 @extends('padrao')
 @section('content')
 <section>
-<img class="imgCadastroCaminhao" src="{{'/img/cadastroCaminhao.png'}}"/>
-<p class="text-xl-start fs-1 fw-bold text-danger">Cadastro de Caminhão</p>
+<img class="imgCadastroCarro" src="{{'/img/cadastroCarro.png'}}"/>
+<p class="text-xl-start fs-1 fw-bold text-danger">Cadastro de Carro</p>
 <div class="container cadastroCaminhao">
-<form class="row g-3" method="post" action="{{route('salvar-banco')}}">
+<form class="row g-3" method="post" action="{{route('salvar-banco-carro')}}">
   @csrf
   <div class="col-md-12">
     <label for="inputModelo" class="form-label">Modelo</label>
-    <input type="text" name="modelos" value="{{old('modelos')}}" class="form-control" id="inputModelo" placeholder="Fusca">
-  @error('modelos')
+    <input type="text" name="modelo" value="{{old('modelos')}}" class="form-control" id="inputModelo" placeholder="Fusca">
+  @error('modelo')
     <div class="text-sm-start text-danger">*Preencher o campo Modelo.</div>
   @enderror
   </div>

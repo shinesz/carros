@@ -1,9 +1,36 @@
 
 .cadastroCaminhao{
-    background-color: brown;
+    background-color: rgb(163, 151, 151);
     margin-top: 5%;
     padding: 3%;
-    margin-left: 35%;
+    margin-left: 10%;
     width: 400px;
     border-radius: 5%;
+    float: left;
+}
+
+.HomeBG{
+    width: 100%;
+}
+
+.card{
+    background-color: rgb(192, 187, 187);
+    align-items: center;
+    float: left;
+    margin-left: 10%;
+    margin-top: 3%;
+}
+
+.imgCadastroCaminhao{
+    float: left;
+    margin-left: 5%;
+    margin-top: 8%;
+}
+
+.imgCadastroCarro{
+    float: left;
+    margin-left: 5%;
+    margin-top: 18%;
+    height: 40%;
+    width: 40%;
 }

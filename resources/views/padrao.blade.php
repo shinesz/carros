@@ -10,7 +10,7 @@
 </head>
 <body>
 <header>
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
   <div class="container-fluid">
     <a class="navbar-brand" href="#">Loja de Veículos</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -40,10 +40,10 @@
             Carros
           </a>
           <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <li><a class="dropdown-item" href="">Cadastrar</a></li>
+            <li><a class="dropdown-item" href="{{'cadastrar-carro'}}">Cadastrar</a></li>
             <li><a class="dropdown-item" href="#">Buscar</a></li>
             <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item" href="#">Editar/Deletar</a></li>
+            <li><a class="dropdown-item" href="{{'/editar-carro'}}">Editar/Deletar</a></li>
           </ul>
         </li>
 
