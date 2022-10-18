@@ -1,60 +1,79 @@
 @extends('padrao')
 @section('content')
-<section class="container m-5">
-
-<div class="container m-5" >
-
-<div class="row center">
-  <div class="col">
-    <input type="text" class="form-control" placeholder="Digite a Marca do Carro" aria-label="First name">
-  </div>
-
-  <div class="col">
-  <button type="button" class="btn btn-info">Buscar</button>
-  </div>
-</div>
-
-
-</div>
-
-
-<table class="table">
-  <thead>
-    <tr>
-      <th scope="col">Código</th>
-      <th scope="col">Modelo</th>
-      <th scope="col">Marca</th>
-      <th scope="col">Ano</th>
-      <th scope="col">Editar</th>
-      <th scope="col">Excluir</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th scope="row">1</th>
-      <td>Serie 745LE</td>
-      <td>Scania</td>
-      <td>2022</td>
-      <td>
-            <button type="button" class="btn btn-primary">
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pencil-square" viewBox="0 0 16 16">
-  <path d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z"/>
-  <path fill-rule="evenodd" d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5v11z"/>
-</svg>
-            </button>
-      </td>
-
-      <td>
-             <button type="button" class="btn btn-danger">
-             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-trash" viewBox="0 0 16 16">
-  <path d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0V6z"/>
-  <path fill-rule="evenodd" d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1v1zM4.118 4 4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4H4.118zM2.5 3V2h11v1h-11z"/>
-</svg>
-             </button>
-      </td>
-    </tr>
-  </tbody>
-</table>
+ 
+<div class="nadaa"></div>
+<section class="section1">
 
 </section>
-@endsection
+
+
+
+
+<section class="se3">
+
+   <h1>Lista de Modelos</h1>
+    
+</section>
+
+<div id="divBusca">
+  <img src="search3.png" alt="Buscar..."/>
+  <input type="text" id="txtBusca" placeholder="Modelo"/>
+  <button id="btnBusca">Buscar</button>
+</div>
+
+
+
+
+<div class="header_fixed">
+        <table>
+            <thead>
+                <tr>
+                    <th>Id</th>
+                    <th>Modelo</th>
+                    <th>Marca</th></th>
+                    <th>Ano</th>
+                    <th>Cor</th>
+                    <th>Valor</th>
+                    <th>Editar/Excluir</tr>
+                    
+                </tr>
+            </thead>
+            <tbody>
+            @foreach($registrosCarro as $registrosCarros)
+                <tr>
+                    <td>{{$registrosCarros->id}}</td>
+                    <td>{{$registrosCarros->modelo}}</td>
+                    <td>{{$registrosCarros->marca}}</td>
+                    <td>{{$registrosCarros->ano}}</td>
+                    <td>{{$registrosCarros->cor}}</td>
+                    <td>{{$registrosCarros->valor}}</td>
+                    <td>
+                        <button><i class="fa-regular fa-pen-to-square" ></i></button> 
+                        <button><i class="fa-solid fa-eraser"></i></button>
+                    </td>
+                </tr>  
+              
+                @endforeach
+            </tbody>
+        </table>
+    </div> 
+    @endsection
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+</body>
+</html>

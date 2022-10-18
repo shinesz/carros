@@ -16,6 +16,16 @@ class CarrosController extends Controller
         return view('editarCarro');
     }
 
+    public function MostrarEditarCarro(){
+        $dadosCarro = Carros::all();
+        //dd($dadosCarro);
+        return view('editarCarro',['registrosCarro' => $dadosCarro]);
+
+      
+    }
+
+    
+
     public function SalvarBancoCarro(Request $request){
         $dadosCarros = $request->validate([
             'modelo' => 'string|required',

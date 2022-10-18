@@ -1,36 +1,427 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
 
-.cadastroCaminhao{
-    background-color: rgb(163, 151, 151);
-    margin-top: 5%;
-    padding: 3%;
-    margin-left: 10%;
-    width: 400px;
-    border-radius: 5%;
-    float: left;
-}
 
-.HomeBG{
+
+.img1{
+
     width: 100%;
+    height: 50%;
 }
 
-.card{
-    background-color: rgb(192, 187, 187);
+.navbar{
+    padding: 20px;
+    font-family: 'Montserrat';
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.navbar .container-fluid .navbar-brand .store:hover{
+    color: rgb(255, 255, 255);
+}
+
+.navbar .container-fluid .navbar-brand:hover{
+    
+    color: rgb(236, 232, 0);
+    transition: .1s;
+}
+
+.nadaa {
+    width: 100%;
+    height: 10px;
+    background-color: black;
+}
+
+.nada {
+    width: 100%;
+    height: 10px;
+    background-color: black;
+}
+
+.section1{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
     align-items: center;
-    float: left;
-    margin-left: 10%;
-    margin-top: 3%;
+    font-family: 'Montserrat';
+    font-weight: 700;
+    text-transform: uppercase;
+ 
 }
 
-.imgCadastroCaminhao{
-    float: left;
-    margin-left: 5%;
-    margin-top: 8%;
+.txtHome{
+    font-size: 40px;
+    position: absolute;
+    margin-right: 500px;
+    color: white;
 }
 
-.imgCadastroCarro{
-    float: left;
-    margin-left: 5%;
-    margin-top: 18%;
-    height: 40%;
-    width: 40%;
+.nav-item .nav-link:hover{
+    color: rgb(236, 232, 0);
+}
+
+.navbar-toggler:hover {
+    color: rgb(236, 232, 0);
+}
+
+.store{
+    font-size: 20px;
+    color: yellow;
+    font-weight: 800;
+}
+
+.final{
+
+    font-size: 15px;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Montserrat';
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 40px;
+
+}
+
+.list-group .list-group-item list-group-item-action .d-flex w-100 justify-content-between:hover{
+    color: rgb(236, 232, 0);
+
+}
+
+.cards{
+
+    margin-top: 40px;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-bottom: 50px;
+    
+  
+}
+
+.list-group{
+
+    margin-top: 80px;
+
+}
+
+.cardleft{
+
+    width: 45%;
+    margin-left: 20%;
+
+}
+
+
+.list-group{
+   
+    margin-top: 40px;
+    margin-left: 100px;
+    margin-right: 100px;
+
+
+}
+.cardd{
+    border: solid 2px;
+    border-radius: 8px;
+}
+
+.cardd img{
+    width: 100%;
+    height: 300px;
+}
+
+.card-body{
+
+padding: 13px;
+
+}
+
+.cardd:hover{
+
+    color:gray;
+}
+
+.txtPro{
+
+    
+    font-size: 50px;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Montserrat';
+    font-weight: 800;
+    text-transform: uppercase;
+    padding: 40px;
+    margin-top: 15px;
+}
+
+.fim{
+    font-size: 15px;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Montserrat';
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 40px;
+}
+
+form{
+
+  
+    font-family:'Montserrat';
+    justify-content: center;
+    margin-left: 14.5%;
+    align-items: center;
+    padding-top: 4%;
+    padding-bottom: 4%;
+    color: white;
+  
+   
+  
+  
+}
+.form-check{
+    margin: 10px;
+}
+
+.boto{
+
+    background-color:rgb(104, 104, 104) ;
+    border: solid 2px;
+    border-color: rgb(65, 65, 65);
+    border-radius: 6px;
+    font-family: 'Montserrat';
+    color: white;
+    
+    
+
+}
+
+.se2{
+    font-size: 40px;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Montserrat';
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 40px;
+    margin-left: 80%;
+    margin-top: 12px;
+    color: white;
+}
+
+
+.lista{
+
+    margin-right: 70px;
+    margin-left: 70px;
+    margin-top: 10px;
+    margin-bottom: 90px;
+    min-height: 100vh;
+
+
+}
+
+.cadastro{
+background-color:transparent;
+ width: 100%;
+ margin-left: 80%; 
+ border-radius: 5%;
+ border: solid 2px white;
+
+
+}
+.cada{
+    min-height: 68vh;
+    
+}
+
+
+.line{
+    position: absolute;
+}
+
+
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.header_fixed {
+    max-height: 100vh;
+    width: 100%;
+    overflow: auto;
+    border: 1px solid #dddddd;
+}
+
+.header_fixed thead th {
+    position: sticky;
+    top: 0;
+    background-color: black;
+    color: #e6e7e8;
+    font-size: 15px;
+}
+
+th,
+td {
+    border-bottom: 1px solid #dddddd;
+    padding: 10px 20px;
+    font-size: 14px;
+}
+
+td img {
+    height: 60px;
+    width: 60px;
+    border-radius: 100%;
+    border: 5px solid #e6e7e8;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+
+tr:nth-child(odd) {
+    background-color: #edeef1;
+}
+
+tr:hover td {
+    color: #44b478;
+    cursor: pointer;
+    background-color: #ffffff;
+}
+
+td button {
+    border: none;
+    padding: 7px 20px;
+    border-radius: 20px;
+    background-color: black;
+    color: #e6e7e8;
+}
+
+::-webkit-scrollbar {
+    width: 6px;
+}
+.fa-solid fa-eraser{
+    margin-left: 3px;
+}
+.header_fixed{
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+.footer-basic {
+    padding:30px 0;
+    background-color: rgb(53, 53, 53);
+    font-family: 'Montserrat';
+    color: rgb(236, 232, 0);
+  }
+  
+  .footer-basic ul {
+    padding:0;
+    list-style:none;
+    text-align:center;
+    font-size:18px;
+    line-height:1.6;
+    margin-bottom:0;
+  }
+  
+  .footer-basic li {
+    padding:0 10px;
+  }
+  
+  .footer-basic ul a {
+    color:inherit;
+    text-decoration:none;
+    opacity:0.8;
+  }
+  
+  .footer-basic ul a:hover {
+    opacity:1;
+  }
+  
+  .footer-basic .social {
+    text-align:center;
+    padding-bottom:25px;
+  }
+  
+  .footer-basic .social > a {
+    font-size:24px;
+    width:40px;
+    height:40px;
+    line-height:40px;
+    display:inline-block;
+    text-align:center;
+    border-radius:50%;
+    border:1px solid #ccc;
+    margin:0 8px;
+    color:inherit;
+    opacity:0.75;
+  }
+  
+  .footer-basic .social > a:hover {
+    opacity:0.9;
+  }
+  
+  .footer-basic .copyright {
+    margin-top:15px;
+    text-align:center;
+    font-size:13px;
+    color: rgb(236, 232, 0);
+    margin-bottom:0;
+  }
+
+  .normal{
+   
+    text-align:center;
+    font-size:13px;
+    color: grey;
+    margin-bottom:0;
+  }
+  .imagem9{
+
+    background: linear-gradient(black);
+    width: auto;
+   
+   
+  }
+
+
+  .se3{
+    font-size: 40px;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Montserrat';
+    font-weight: 700;
+    text-transform: uppercase;
+     padding: 40px;
+   
+    color: black;
+}
+
+
+.busca{
+    margin-left: 40px;
+    margin-right: 50%;
 }
