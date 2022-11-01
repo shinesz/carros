@@ -16,12 +16,19 @@ class CarrosController extends Controller
         return view('editarCarro');
     }
 
-    public function MostrarEditarCarro(){
-        $dadosCarro = Carros::all();
+    public function MostrarEditarCarro(Request $request){
+      
+        //$dadosCarro = Carros::all();
         //dd($dadosCarro);
+       
+        $dadosCarro = Carros::query();
+        $dadosCarro->when($request->marca,function($query, $vl){
+            $query-> where('marca', 'like','%'.$vl.'%');
+        });
+
+        $dadosCarro = $dadosCarro->get();
         return view('editarCarro',['registrosCarro' => $dadosCarro]);
 
-      
     }
 
     
@@ -39,4 +46,22 @@ class CarrosController extends Controller
 
         return Redirect::route('home');
     }
+
+    public function destroy($id){
+        Carros::findOrfail($id)-> delete();
+        return Redirect::route('editar-carro');
+    }
+    
+    public function edit($id){
+        $carros= Carros::findOrfail($id);
+        return view('edit',['carros' => $carros]);
+    }
+
+
+    public function update(Request $request){
+        Carros::findOrfail( $request->id)->update($request->all());
+        return Redirect::route('editar-carro');
+
 }
+
+} 

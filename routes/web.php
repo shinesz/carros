@@ -28,3 +28,10 @@ Route::post('/cadastrar-caminhao',[CaminhaoController::class,'SalvarBanco'])->na
 Route::get('/editar-carro',[CarrosController::class,'MostrarEditarCarro'])->name('editar-carro');
 Route::get('/cadastrar-carro',[CarrosController::class,'FormularioCadastroCarro'])->name('cadastrar-carro');
 Route::post('/cadastrar-carro',[CarrosController::class,'SalvarBancoCarro'])->name('salvar-banco-carro');
+
+
+Route::put('/editar/{id}',[CarrosController::class, 'update']);
+
+Route::delete('/editar/{id}',[CarrosController::class, 'destroy']);
+
+Route::get('/editar/{id}',[CarrosController::class, 'edit']);

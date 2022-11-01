@@ -15,12 +15,21 @@
     
 </section>
 
-<div id="divBusca">
-  <img src="search3.png" alt="Buscar..."/>
-  <input type="text" id="txtBusca" placeholder="Modelo"/>
-  <button id="btnBusca">Buscar</button>
+<div class="row center">
+    <form method = "get" action ="/editar-carro">
+  <div class="col">
+    <input type="text" id= "marca" name="marca"class="form-control" placeholder="Digite a Marca do Carro" aria-label="First name">
+  </div>
+
+  <div class="col">
+  <button type="submit" class="btn btn-info">Buscar</button>
+  </div>
+  </form>
 </div>
 
+<br>
+<br>
+<br>
 
 
 
@@ -48,8 +57,12 @@
                     <td>{{$registrosCarros->cor}}</td>
                     <td>{{$registrosCarros->valor}}</td>
                     <td>
-                        <button><i class="fa-regular fa-pen-to-square" ></i></button> 
-                        <button><i class="fa-solid fa-eraser"></i></button>
+                        <a href="/editar/{{$registrosCarros->id}}"><button><i class="fa-regular fa-pen-to-square"></i></button></a>
+                        <form action="/editar/{{$registrosCarros->id}}" method ="post" class="botao1">
+                        @csrf
+                        @method('DELETE')
+                        <a href="#" class="BOTAO2"><button><i class="fa-solid fa-eraser"></i></button></a>
+                        </form>
                     </td>
                 </tr>  
               

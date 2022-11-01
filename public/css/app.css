@@ -1,7 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
 
-
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
 .img1{
 
@@ -279,6 +283,9 @@ td {
     border-bottom: 1px solid #dddddd;
     padding: 10px 20px;
     font-size: 14px;
+    text-align: center;
+    
+
 }
 
 td img {
@@ -308,6 +315,7 @@ td button {
     border-radius: 20px;
     background-color: black;
     color: #e6e7e8;
+    
 }
 
 ::-webkit-scrollbar {
@@ -424,4 +432,11 @@ td button {
 .busca{
     margin-left: 40px;
     margin-right: 50%;
+}
+
+.BOTAO2{
+
+  
+    margin-right: 15%;
+
 }
